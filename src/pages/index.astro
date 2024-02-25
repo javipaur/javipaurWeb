@@ -8,6 +8,9 @@ import MailIcon from '../components/icons/MailIcon.astro';
 import Experience from '../components/Experience.astro';
 import SectionContainer from '../components/SectionContainer.astro';
 import BriefCase from '../components/icons/BriefCase.astro';
+import ContactIcon from '../components/icons/ContactIcon.astro';
+import AboutMe from '../components/icons/AboutMe.astro';
+import Technology from '../components/icons/Technology.astro';
 ---
 
 <Layout 
@@ -16,7 +19,7 @@ description='Javier Palacio Diseño Desarrollo Software, Web, App movil Vitoria 
 >
 	<main class="px-4">
 		<SectionContainer class="py-44 pb-24">
-			<div class="max-w-xl">
+			<class class="max-w-xl">
 				<div class="flex gap-4 mb-4">
 				  <img
 					class="rounded-full shadow-lg size-16"
@@ -55,13 +58,40 @@ description='Javier Palacio Diseño Desarrollo Software, Web, App movil Vitoria 
 				info@javierpalacio.es
 			</SocialPill>
 		</nav>
-
-		</SectionContainer>
-		<SectionContainer id="experiencia">
-			<h2 class="text-white text-2xl font-semibold mb-6 flex gap-x-3 item-center">
+		
+		<SectionContainer id="experiencia" class="py-24 ">
+			<h2 class="text-red text-2xl font-semibold mb-6 flex gap-x-3 item-center">
 				<BriefCase class="size-7"/>
 				Experiencia Laboral</h2>
 			<Experience/>
+		</SectionContainer>
+
+		<SectionContainer id="proyectos" class="py-24 ">
+			<h2 class="text-red text-2xl font-semibold mb-6 flex gap-x-3 item-center">
+				<BriefCase class="size-7"/>
+				Proyectos</h2>
+			
+		</SectionContainer>
+
+		<SectionContainer id="sobre-mi" class="py-24 ">
+			<h2 class="text-red text-2xl font-semibold mb-6 flex gap-x-3 item-center">
+				<AboutMe class="size-7"/>
+				Sobre Mí</h2>
+			
+		</SectionContainer>
+
+		<SectionContainer id="contacto" class="py-24 ">
+			<h2 class="text-red text-2xl font-semibold mb-6 flex gap-x-3 item-center">
+				<ContactIcon class="size-7"/>
+				Contacto</h2>
+			
+		</SectionContainer>
+
+		<SectionContainer id="contacto" class="py-24 ">
+			<h2 class="text-red text-2xl font-semibold mb-6 flex gap-x-3 item-center">
+				<Technology class="size-7"/>
+				Tecnologías</h2>
+			
 		</SectionContainer>
 
 		
