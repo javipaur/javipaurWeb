@@ -1,0 +1,30 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Ingeniero Software",
+    company: "Altia Consultores",
+    description:
+      "Divulgo sobre programación y desarrollo web en diferentes plataformas. Galardonado como mejor creador de contenido de habla no-inglesa en 2022 y mejor comunidad en 2023 por GitHub.",
+    link: "https://altia.es",
+  },
+  {
+    date: "Abril 2022",
+    title: "Técnico programación java",
+    company: "WebDreams",
+    description:"Desarrollo de la nueva Plataforma de tarjeta ciudadana. Mejorando la arquitectura de esta plataforma y optimizando el modelo de datos, a través de Hibernate y JPA. Utilizando tecnologías como SpringBoot y Swagger para la parte de Api-Rest. y Thymeleaf para la parte web.",
+    link: "https://www.keysmartcity.com/"
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
